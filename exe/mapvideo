@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'mapvideo'
+
+if ARGV[0]
+  kml_filename = ARGV[0]
+  route = Mapvideo::Route.from_kml(kml_filename)
+  Mapvideo::StaticMapRenderer.render(route)
+end
+

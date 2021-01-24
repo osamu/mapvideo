@@ -1,17 +1,41 @@
+PATH
+  remote: .
+  specs:
+    mapvideo (0.1.0)
+      nokogiri (>= 1.11.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    diff-lcs (1.4.4)
     mini_portile2 (2.5.0)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     racc (1.5.2)
+    rake (10.5.0)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  nokogiri
+  bundler (~> 1.17)
+  mapvideo!
+  rake (~> 10.0)
+  rspec (~> 3.0)
 
 BUNDLED WITH
    1.17.2

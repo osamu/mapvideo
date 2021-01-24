@@ -1,6 +1,11 @@
+require "mapvideo/version"
 require 'nokogiri'
 require 'time'
 require 'net/http'
+
+module Mapvideo
+  class Error < StandardError; end
+  # Your code goes here...
 
 class EventTimeline
   Event = Struct.new(:offset, :event)
@@ -108,8 +113,4 @@ class StaticMapRenderer
 
 end
 
-if ARGV[0]
-  kml_filename = ARGV[0]
-  route = Route.from_kml(kml_filename)
-  StaticMapRenderer.render(route)
 end
